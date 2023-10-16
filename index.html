@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return from function</title>
+</head>
+<body>
+    
+    <script>
+        function substract(a, b) {
+            let result = a - b;
+            return result;
+        }
+
+        let subResult = substract(5, 4);
+        console.log(subResult); // 1
+
+        function test(name) {
+            if (name != "Anna") {
+                return;
+            } else {
+                console.log("Hello Anna");
+            }
+        }
+
+        test("Anna");
+    </script>
+</body>
+</html>
